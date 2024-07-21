@@ -1,32 +1,3 @@
-# import ollama
-# import fastapi
-# from fastapi import FastAPI
-# app=FastAPI()
-# @app.get("/chatmessage/")
-# def generatemessage(passage:str): 
-#     response =  ollama.chat(model='mistral', messages=[
-#   {
-#     'role': 'user',
-#     'content': 'create a sentiment analysis with sentiment label , score,keywords and output it in json from the passage-'+passage+"'"
-#   },
- 
-# ],
-#  format='json'
-# )
-#     return{response}
-
-# import ollama
-# passage="God is dead.God remains dead and we have killed him.We are happy people."
-# response =  ollama.chat(model='mistral', messages=[
-#   {
-#     'role': 'user',
-#     'content': 'create a sentiment analysis with sentiment label , score,keywords and output it in json from the passage-'+passage+"'"
-#   },
- 
-# ],
-#  format='json'
-# )
-# print(response)
 import ollama
 import fastapi
 from fastapi import FastAPI 
